@@ -8,8 +8,8 @@ To Add a Product: Run npx tsx src/main.ts add "Product Name" Price.
 
 To List All Products: Run npx tsx src/main.ts list  to display all stored data.
 
-To Update a Product: Run npx tsx src/main.ts update <ID> --name "New Name" --price <New Price> to modify an existing item.
+To Update a Product: Run npx tsx src/main.ts update ID --name "New Name" --price <New Price> to modify an existing item.
 
 To Delete a Product: Run npx tsx src/main.ts delete <ID> to remove a specific product by its ID.
 
-To Find a Product: Run npx tsx src/main.ts get <ID> 
+To Find a Product: Run npx tsx src/main.ts get ID 
