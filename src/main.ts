@@ -36,7 +36,7 @@ program
   });
 
 program
-  .command("add <name> ")
+  .command("add <name> <price> ")
   .description("Add a new product")
   .action(async (name, price) => {
     await checkConn();
