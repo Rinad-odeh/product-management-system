@@ -89,4 +89,7 @@ program
     console.log("Product updated:", product.toJSON());
   });
 
-program.parse(process.argv);
+program.parseAsync(process.argv).then(async () => {
+  await sequelize.close();
+  process.exit(0);
+});
