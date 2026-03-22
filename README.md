@@ -29,8 +29,8 @@ yarn install
 Create a `.env` file in the root folder and copy the content from `.env.example`, then update it with your local database credentials:
 
 ```env
-DB_NAME=productsdb
-DB_USER=postgres
+DB_NAME=your_db_name
+DB_USER=your_db_user
 DB_PASS=yourpassword
 DB_HOST=localhost
 DB_PORT=5432
