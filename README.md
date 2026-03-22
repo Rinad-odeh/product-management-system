@@ -1,15 +1,75 @@
- Setup :
-To get started, run npm install to install all dependencies. Since the database credentials are not uploaded for security, you must create a local .env file. You can find all the required environment variables in the .env.example file included in the project; simply copy its content and provide your local PostgreSQL details (DB_NAME, DB_USER, DB_PASS, etc.).
+# TypeScript CLI Products CRUD
 
-How to Use the CLI:
-The application uses npx tsx to run the TypeScript files directly. Use the following commands to manage your products:
+##  Description
 
-To Add a Product: Run npx tsx src/main.ts add "Product Name" Price.
+A simple CLI application to manage products using TypeScript, Sequelize, and PostgreSQL.
+It supports basic CRUD operations through terminal commands.
 
-To List All Products: Run npx tsx src/main.ts list  to display all stored data.
+---
 
-To Update a Product: Run npx tsx src/main.ts update ID --name "New Name" --price <New Price> to modify an existing item.
+## Requirements
 
-To Delete a Product: Run npx tsx src/main.ts delete <ID> to remove a specific product by its ID.
+Before running the project, make sure you have:
 
-To Find a Product: Run npx tsx src/main.ts get ID 
+* Node.js (v18 or higher recommended)
+* PostgreSQL (v14 or higher recommended)
+
+---
+
+## Setup
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Create `.env` file
+
+Create a `.env` file in the root folder and copy the content from `.env.example`, then update it with your local database credentials:
+
+```env
+DB_NAME=productsdb
+DB_USER=postgres
+DB_PASS=yourpassword
+DB_HOST=localhost
+DB_PORT=5432
+```
+
+---
+
+##  3. Usage & CLI Commands
+
+###  Add a product
+
+```bash
+npx tsx src/main.ts add <name> <price>
+```
+
+###  List all products
+
+```bash
+npx tsx src/main.ts list
+```
+
+###  Get product by ID
+
+```bash
+npx tsx src/main.ts get <id>
+```
+
+###  Update a product
+
+```bash
+npx tsx src/main.ts update <id> <name> <price>
+```
+
+### Delete a product
+
+```bash
+npx tsx src/main.ts delete <id>
+```
+
+
+
+---
