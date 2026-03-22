@@ -21,7 +21,7 @@ Before running the project, make sure you have:
 ### 1. Install dependencies
 
 ```bash
-npm install
+yarn install
 ```
 
 ### 2. Create `.env` file
@@ -43,33 +43,30 @@ DB_PORT=5432
 ###  Add a product
 
 ```bash
-npx tsx src/main.ts add <name> <price>
+yarn tsx src/main.ts add <name> <price>
 ```
 
 ###  List all products
 
 ```bash
-npx tsx src/main.ts list
+yarn tsx src/main.ts list
 ```
 
 ###  Get product by ID
 
 ```bash
-npx tsx src/main.ts get <id>
+yarn tsx src/main.ts get <id>
 ```
 
 ###  Update a product
 
 ```bash
-npx tsx src/main.ts update <id> <name> <price>
+yarn tsx src/main.ts update <id> <name> <price>
 ```
 
 ### Delete a product
 
 ```bash
-npx tsx src/main.ts delete <id>
+yarn tsx src/main.ts delete <id>
 ```
 
-
-
----
